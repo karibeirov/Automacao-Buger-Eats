@@ -50,7 +50,7 @@ E selecionar o metodo de entrega
 
 E realizar o upload da CNH
     Scroll Element Into View     //button[contains(.,'Cadastre-se para fazer entregas')]
-    Choose File                  //input[contains(@type,'file')]    C:\\Users\\bruno.vittor\\Pictures\\cnh_fake.jpg
+    Choose File                  //input[contains(@type,'file')]    C:\\Users\\kamila.vittor\\Pictures\\cnh_fake.jpg
 
 E concluir o cadastro
     Click Element                    //button[contains(.,'Cadastre-se para fazer entregas')]
