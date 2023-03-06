@@ -9,8 +9,8 @@ ${HEAD_NAME}               //h1[contains(.,'Seja um parceiro entregador pela Bug
 ${INITIAL_PAGE_TEXT}       //p[contains(.,'Em vez de oportunidades tradicionais de entrega de refeições em horários pouco flexíveis, seja seu próprio chefe.')]
 ${REGITER_PAGE_TITLE}      //h1[contains(.,'Cadastre-se para  fazer entregas')]
 ${STREET}                  Rua Paineira
-${BAIRRO}                  Parque Santa Rita de Cássia
-${CIDADE}                  Cotia/SP
+${NEIGHBORHOOD}                  Parque Santa Rita de Cássia
+${CITY}                  Cotia/SP
 
 *** Keywords ***
 Validacao Pagina inicial
@@ -41,9 +41,9 @@ E registrar o endereco do entregador
     Click Element                         //input[@placeholder='Complemento'] 
     Input Text                            //input[@placeholder='Complemento']    Casa 1
     Scroll Element Into View              //h2[contains(.,'Método de entrega')]
-    Wait Until Element Is Visible         //input[@value='${BAIRRO}']
+    Wait Until Element Is Visible         //input[@value='${NEIGHBORHOOD}']
     Sleep    3
-    Wait Until Element Is Visible         //input[contains(@value,'${CIDADE}')]
+    Wait Until Element Is Visible         //input[contains(@value,'${CITY}')]
 
 E selecionar o metodo de entrega 
     Click Element    //img[@alt='Moto']
